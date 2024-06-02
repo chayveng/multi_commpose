@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  fastapi:
+    image: agent-01
+    build: .
+    container_name: agent-01
+    volumes:
+      - .:/app
+    command: ["python", "main.py"]

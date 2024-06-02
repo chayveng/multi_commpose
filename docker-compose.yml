@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  agent-01:
+    image: agent-01
+    build:
+      context: ./agent-01
+    container_name: agent-01
+
+  agent-02:
+    image: agent-02
+    build:
+      context: ./agent-02
+    container_name: agent-02
+
+  agent-03:
+    image: agent-03
+    build:
+      context: ./agent-03
+    container_name: agent-03
