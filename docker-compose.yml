@@ -1,20 +1,26 @@
-version: '3'
+version: "3.9"
 
 services:
   agent-01:
-    image: agent-01
+    image: agent
     build:
       context: ./agent-01
     container_name: agent-01
+    volumes:
+      - ./agent-01:/app
 
   agent-02:
-    image: agent-02
+    image: agent
     build:
       context: ./agent-02
     container_name: agent-02
+    volumes:
+      - ./agent-02:/app
 
   agent-03:
-    image: agent-03
+    image: agent
     build:
       context: ./agent-03
     container_name: agent-03
+    volumes:
+      - ./agent-03:/app
